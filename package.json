@@ -1,0 +1,9 @@
+{
+  "name": "cafeteria-site",
+  "version": "0.0.1",
+  "description": "Cafeteria website migration to Vercel",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "vercel --prod"
+  }
+}
