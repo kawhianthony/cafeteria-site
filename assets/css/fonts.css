@@ -1,0 +1,30 @@
+/* Local Font Fallbacks - replacing Typekit dependencies */
+
+/* Basic font fallbacks to replace Typekit */
+@font-face {
+  font-family: 'sans-serif-fallback';
+  src: local('Helvetica'), local('Arial'), local('system-ui');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sans-serif-fallback';
+  src: local('Helvetica'), local('Arial'), local('system-ui');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Override any Typekit font references with system fonts */
+body, html {
+  font-family: 'sans-serif-fallback', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.wf-loading {
+  /* Remove loading state immediately since we don't need web fonts */
+}
+
+/* Ensure text is visible immediately */
+.wf-loading * {
+  visibility: visible !important;
+}
